@@ -100,7 +100,7 @@ let character
 characterModel.load(
   './blender_models/final_fox_skateboard_model.glb',
   function (gltf) {
-    gltf.scene.scale.set(10, 10, 10)
+    gltf.scene.scale.set(10 , 10, 10)
 
     character = gltf.scene
 
@@ -151,17 +151,18 @@ signMenu
 // )
 
 // Car Object
-// let car2
-// car
-//   .init('Car', 30, -2, 5, null, -135, null)
-//   .then((carObject) => {
-//     console.log('The car was loaded successfully')
-//     car2 = carObject
-//     scene.add(carObject)
-//   })
-//   .catch((error) => {
-//     console.error('An error was detected to load the car', error)
-//   })
+let car2
+car
+  .init('Car', 30, -2, 5, null, -135, null)
+  .then((carObject) => {
+    console.log('The car was loaded successfully')
+    car2 = carObject
+    scene.add(carObject)
+  })
+  .catch((error) => {
+    console.error('An error was detected to load the car', error)
+  })
+  
 
 // city.init('City', 10, -4, 5, null, null, null)
 // .then((carObject) => {
